@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERRY CHRISTMAS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="as" class="christmas-message">Merry Christmas</div>
+    <div class="tree-container">
+      <img
+        src="https://github.com/Panbap/datapanbap/blob/main/image/big_tree.png?raw=true"
+        alt="Cây thông"
+        class="tree-icon"
+      />
+    </div>
+
+    <div class="container">
+      <button id="showButton">Thiệp nè</button>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+      <button id="closeButton" class="close-btn">X</button>
+      <div id="ax" class="card">
+        <div class="imgBox">
+          <div class="bark"></div>
+          <img
+            src="https://bloganchoi.com/wp-content/uploads/2020/12/thiep-giang-sinh-dep-2020-2-696x729.jpg"
+          />
+        </div>
+        <div class="details">
+          <h4 class="color2 margin">(MERRY CHRISTMAS)</h4>
+          <p>Giáng Sinh đến rồi.</p>
+          <p>Chúc mọi người mùa lễ ấm áp và ngọt ngào</p>
+          <p>Cảm ơn mọi người luôn bên cạnh tôi.</p>
+          <p>Hy vọng chúng ta sẽ có thêm nhiều</p>
+          <p>kỷ niệm đẹp trong năm tới.</p>
+          <p class="text-right">Chúc mừng Giáng Sinh!</p>
+          <p class="text-right">♥ĐK Phi Nam♥</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thêm nhạc tự động phát -->
+    <audio id="backgroundMusic" loop>
+      <source src="song/background.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      window.addEventListener("load", function () {
+        const music = document.getElementById("backgroundMusic");
+        music.play().catch(function (error) {
+          console.log("Không thể phát nhạc tự động:", error);
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <a>Đăng Khoa Phi Nam</a>
+  </body>
+</html>
